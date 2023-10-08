@@ -11,9 +11,9 @@ const validarContacto =()=>{
  let direccion = document.querySelectorAll('#direccion');
  let barrio = document.querySelectorAll('#barrio')
  
- if (documentos.value.length ==0){
-    alert('El documento esta vacio. Validalo')
- }
+ if(tipoDocumento.value.length == 0 ){
+   alert('No se a seleccionado una opccion. Validalo')
+}
  else if(nombres.value.length == 0){
     alert('El Nombre esta vacio. Validalo')
  }
@@ -23,10 +23,10 @@ const validarContacto =()=>{
 else if(parentesco.value.length == 0){
    alert('El parentesco esta vacio. Validalo')
 }
-else if(tipoDocumento.value == 0 ){
-   alert('No se a seleccionado una opccion. Validalo')
+else  if (documentos.value.length ==0){
+   alert('El documento esta vacio. Validalo')
 }
-else if(estado.value == 0 ){
+else if(estado.value.length == 0 ){
    alert('No se a seleccionado una opccion. Validalo')
 }
  else{
