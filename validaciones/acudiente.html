@@ -14,17 +14,43 @@
 </head>
 
 <body>
- <div class="container">
-    <div class="mb-3">
+ <div class="container">  
+      <div class="mb-3">
        <form class="mt-5">
+        <h1 class="text-center text-info">Informacion de Acudientes</h1> <br><br>      
+        <label for=""> Tipo de Documento</label><br>
+        <select name="" id="tipoDocumento" >
+          <option value="">Seleccionar</option>
+          <option value="">CC</option>
+          <option value="">TI</option>
+          <option value="">RC</option>
+          <option value="">DE</option>
+        </select><br><br>
         <label for="" class="form-label">Documento</label>
         <input type="text"class="form-control" name="" id="documento"  placeholder="Documento "><br>
-        <label for="" class="form-label">Nombre</label>
+        <label for="" class="form-label">Nombre Completo</label>
         <input type="text"class="form-control" name="" id="nombres"  placeholder="Nombre "><br>
-        <label for="" class="form-label">Apellido</label>
-        <input type="text"class="form-control" name="" id="apellido"  placeholder="Apellidos "><br>
+        <label for="" class="form-label">Edad</label>
+        <input type="text"class="form-control" name="" id="edad"  placeholder="Edad "><br>
+        <label for="" class="form-label">Parentesco</label>
+        <input type="text"class="form-control" name="" id="parentesco"  placeholder="Parentesco"><br>
+        <label for=""> Estado</label><br>
+        <select name="" id="estado" >
+          <option value="">Seleccionar</option>
+          <option value="">Activo</option>
+          <option value="">Inactivo</option>
+          <option value="">Activo legalmente</option>
+          <option value="">Inactivo legalmente</option>
+          <option value="">Fallecido</option>
+        </select><br><br>
         <label for="" class="form-label">Telefono</label>
         <input type="text"class="form-control" name="" id="telefono"  placeholder="Telefono"><br>
+        <label for="" class="form-label">Correo Electronico</label>
+        <input type="email"class="form-control" name="" id="correo"  placeholder="Correo Electronico"><br>
+        <label for="" class="form-label">Dirección</label>
+        <input type="text"class="form-control" name="" id="direccion"  placeholder="Dirección"><br>
+        <label for="" class="form-label">Barrio</label>
+        <input type="text"class="form-control" name="" id="barrio" placeholder="Barrio"><br>
         <button type="submit" id="btnEnviar" class="btn btn-success">Enviar</button>
        </form>
         
