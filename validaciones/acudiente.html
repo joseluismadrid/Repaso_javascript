@@ -6,6 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="estilos/style.css">
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,44 +17,49 @@
 <body>
  <div class="container">  
       <div class="mb-3">
-       <form class="mt-5">
-        <h1 class="text-center text-info">Informacion de Acudientes</h1> <br><br>     
-        <label for=""> Tipo de Documento</label><br>
-        <select name="" id="tipoDocumento" >
-          <option value="0">Seleccionar</option>
-          <option value="1">CC</option>
-          <option value="2">TI</option>
-          <option value="3">RC</option>
-          <option value="4">DE</option>
-        </select><br><br>
-        <label for=""> Estado</label><br>
-        <select name="" id="estado" >
-          <option value="0">Seleccionar</option>
-          <option value="1">Activo</option>
-          <option value="2">Inactivo</option>
-          <option value="3">Activo legalmente</option>
-          <option value="4">Inactivo legalmente</option>
-          <option value="5">Fallecido</option>
-        </select><br><br>
-        <label for="" class="form-label">Documento</label>
-        <input type="text"class="form-control-mb-3" name="" id="documento"  placeholder="Documento ">
-        <label for="" class="form-label">Nombre Completo</label>
-        <input type="text"class="form-control-mb-3" name="" id="nombres"  placeholder="Nombre ">
-        <label for="" class="form-label">Edad</label>
-        <input type="text"class="form-control-mb-3" name="" id="edad"  placeholder="Edad ">
-        <label for="" class="form-label">Parentesco</label>
-        <input type="text"class="form-control-mb-3" name="" id="parentesco"  placeholder="Parentesco">        
-        <label for="" class="form-label">Telefono</label>
-        <input type="text"class="form-control-mb-3" name="" id="telefono"  placeholder="Telefono">
-        <label for="" class="form-label">Correo Electronico</label>
-        <input type="email"class="form-control-mb-3" name="" id="correo"  placeholder="Correo Electronico">
-        <label for="" class="form-label">Dirección</label>
-        <input type="text"class="form-control-mb-3" name="" id="direccion"  placeholder="Dirección">
-        <label for="" class="form-label">Barrio</label>
-        <input type="text"class="form-control-mb-3" name="" id="barrio" placeholder="Barrio"><br><br>
-        <button type="submit" id="btnEnviar" class="btn btn-success">Enviar</button>
-        <button type="submit" id="btnCancelar" class="btn btn-info">Cancelar</button>
-       </form>
+        <div class="father"> 
+          <h1 class="text-center text-info mt-5">Informacion de Acudientes</h1>              
+        <form>                    
+          <table class="table">
+            <tbody>
+              <tr>
+              <label for=""> Tipo de Documento</label><br>
+          <select name="" id="tipoDocumento" >
+            <option value="">...</option>
+            <option value="">CC</option>
+            <option value="">TI</option>
+            <option value="">RC</option>
+            <option value="">DE</option>          
+          </select><br><label for="" class="form-label-sm">Documento</label><br><input type="text"class="form-control-sm" name="" id="documento"  placeholder="Documento "><br>
+          <label for="" class="form-label-sm">Nombre Completo</label><br>
+          <input type="text"class="form-control-sm" name="" id="nombres"  placeholder="Nombre "><br>
+          <label for="" class="form-label-sm">Edad</label><br>
+          <input type="text"class="form-control-sm" name="" id="edad"  placeholder="Edad "><br>
+          <label for="" class="form-label-sm">Parentesco</label><br>
+          <input type="text"class="form-control-sm" name="" id="parentesco"  placeholder="Parentesco"><br>
+          <label for=""> Estado</label><br>
+          <select name="" id="estado" >
+            <option value="">...</option>
+            <option value="">Activo</option>
+            <option value="">Inactivo</option>
+            <option value="">Activo legalmente</option>
+            <option value="">Inactivo legalmente</option>
+            <option value="">Fallecido</option>
+          </select><br><label for="" class="form-label-sm">Telefono</label><br><input type="text"class="form-control-sm" name="" id="telefono"  placeholder="Telefono"><br>
+          <label for="" class="form-label-sm">Correo Electronico</label><br>
+          <input type="email"class="form-control-sm" name="" id="correo"  placeholder="Correo Electronico"><br>
+          <label for="" class="form-label-sm">Dirección</label><br>
+          <input type="text"class="form-control-sm" name="" id="direccion"  placeholder="Dirección"><br>
+          <label for="" class="form-label-sm">Barrio</label><br>
+          <input type="text"class="form-control-sm" name="" id="barrio" placeholder="Barrio"><br><br>
+         <td scope="row"> <button type="submit" id="btnEnviar" class="btn btn-success">Enviar</button>
+          <button type="submit" id="btnCancelar" class="btn btn-info">Cancelar</button></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+         </form>
+       
         
       </div>
  </div>

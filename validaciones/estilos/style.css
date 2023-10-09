@@ -1,0 +1,20 @@
+.father{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    margin-left: 29vh;
+    margin-top: 5vh; 
+    
+    
+}
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
+  
