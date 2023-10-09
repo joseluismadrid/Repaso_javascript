@@ -39,38 +39,14 @@
  numeros del 1 al 100 
  */
     
-  const numero = prompt("Introduzca un número:");
-
-  if (numero > 10) {
-    
-    let suma = 0;
-    for (let i = 1; i <= 100; i++) {
-      suma += i;
-    }
-
-  
-    alert("La suma de los números del 1 al 100 es:", suma);
-  } else {
-  
-    alert("El número debe ser mayor que 10.");
-  }
-
-
-pendiente
-ñ{{l{}}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ const sumaNumeros = (numero)=>{
+   var numero = parseInt(prompt('Ingresa el numero'));
+   var suma=0;
+   if (numero >10){
+      for (var i = 1; i <= 10; i++) {
+        suma+=i;
+        
+      }
+      alert("La suma de los numeros del 1 al 100 es: "+suma)  
+   }
+ }
