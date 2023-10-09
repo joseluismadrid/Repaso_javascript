@@ -1,6 +1,6 @@
 document.getElementById('btnEnviar').addEventListener('click', function(event) {
  event.preventDefault();
-
+ 
  var tipoDocumento = document.getElementById('tipoDocumento').value;
  var documento = document.getElementById('documento').value;
  var nombres = document.getElementById('nombres').value;
