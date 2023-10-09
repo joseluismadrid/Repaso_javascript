@@ -17,7 +17,7 @@
  <div class="container">  
       <div class="mb-3">
        <form class="mt-5">
-        <h1 class="text-center text-info">Informacion de Acudientes</h1> <br><br>      
+        <h1 class="text-center text-info">Informacion de Acudientes</h1> <br><br>     
         <label for=""> Tipo de Documento</label><br>
         <select name="" id="tipoDocumento" >
           <option value="0">Seleccionar</option>
@@ -26,14 +26,6 @@
           <option value="3">RC</option>
           <option value="4">DE</option>
         </select><br><br>
-        <label for="" class="form-label">Documento</label>
-        <input type="text"class="form-control" name="" id="documento"  placeholder="Documento "><br>
-        <label for="" class="form-label">Nombre Completo</label>
-        <input type="text"class="form-control" name="" id="nombres"  placeholder="Nombre "><br>
-        <label for="" class="form-label">Edad</label>
-        <input type="text"class="form-control" name="" id="edad"  placeholder="Edad "><br>
-        <label for="" class="form-label">Parentesco</label>
-        <input type="text"class="form-control" name="" id="parentesco"  placeholder="Parentesco"><br>
         <label for=""> Estado</label><br>
         <select name="" id="estado" >
           <option value="0">Seleccionar</option>
@@ -43,14 +35,22 @@
           <option value="4">Inactivo legalmente</option>
           <option value="5">Fallecido</option>
         </select><br><br>
+        <label for="" class="form-label">Documento</label>
+        <input type="text"class="form-control-mb-3" name="" id="documento"  placeholder="Documento ">
+        <label for="" class="form-label">Nombre Completo</label>
+        <input type="text"class="form-control-mb-3" name="" id="nombres"  placeholder="Nombre ">
+        <label for="" class="form-label">Edad</label>
+        <input type="text"class="form-control-mb-3" name="" id="edad"  placeholder="Edad ">
+        <label for="" class="form-label">Parentesco</label>
+        <input type="text"class="form-control-mb-3" name="" id="parentesco"  placeholder="Parentesco">        
         <label for="" class="form-label">Telefono</label>
-        <input type="text"class="form-control" name="" id="telefono"  placeholder="Telefono"><br>
+        <input type="text"class="form-control-mb-3" name="" id="telefono"  placeholder="Telefono">
         <label for="" class="form-label">Correo Electronico</label>
-        <input type="email"class="form-control" name="" id="correo"  placeholder="Correo Electronico"><br>
+        <input type="email"class="form-control-mb-3" name="" id="correo"  placeholder="Correo Electronico">
         <label for="" class="form-label">Dirección</label>
-        <input type="text"class="form-control" name="" id="direccion"  placeholder="Dirección"><br>
+        <input type="text"class="form-control-mb-3" name="" id="direccion"  placeholder="Dirección">
         <label for="" class="form-label">Barrio</label>
-        <input type="text"class="form-control" name="" id="barrio" placeholder="Barrio"><br>
+        <input type="text"class="form-control-mb-3" name="" id="barrio" placeholder="Barrio"><br><br>
         <button type="submit" id="btnEnviar" class="btn btn-success">Enviar</button>
         <button type="submit" id="btnCancelar" class="btn btn-info">Cancelar</button>
        </form>
