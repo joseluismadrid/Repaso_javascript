@@ -39,7 +39,7 @@
  numeros del 1 al 100 
  */
     
- const sumaNumeros = (numero)=>{
+ const sumaNumeros = ()=>{
    var numero = parseInt(prompt('Ingresa el numero'));
    var suma=0;
    if (numero >10){
@@ -47,6 +47,6 @@
         suma+=i;
         
       }
-      alert("La suma de los numeros del 1 al 100 es: "+suma)  
+      console.log("La suma de los numeros del 1 al 100 es: "+suma)  
    }
  }
