@@ -6,7 +6,13 @@ const buscarCliente = (dato)=>{
             encontrado=true
         }
     }
-    console.log(encontrado)
+  return new Promise((resolve,reject)=>{
+    if (encontrado){
+        resolve('Dato Encontrado')
+    }else{
+        reject('Dato No Encontrado')
+    }
+  });
 }
 document.querySelector('#btnBuscar')
 .addEventListener('click',()=>buscarCliente(document.getElementById('dato').value))
