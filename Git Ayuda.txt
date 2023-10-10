@@ -12,7 +12,7 @@ git init
 git add .
 git commit -m "Primer Commit"
 
-git config user.email "jposeluis6112011@hotmail.com"
+git config user.email "joseluis6112011@hotmail.com"
 git config user.name "joseluismadrid"
 git remote add origin https://github.com/joseluismadrid/javascript.git
 git push -u origin main
