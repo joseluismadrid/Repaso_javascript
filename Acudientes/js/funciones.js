@@ -1,6 +1,4 @@
-document.getElementById('btnEnviar').addEventListener('click', function(event) {
- event.preventDefault();
- 
+const validarFormulario = ()=>{    
  var tipoDocumento = document.getElementById('tipoDocumento').value;
  var documento = document.getElementById('documento').value;
  var nombres = document.getElementById('nombres').value;
@@ -12,48 +10,204 @@ document.getElementById('btnEnviar').addEventListener('click', function(event) {
  var direccion = document.getElementById('direccion').value;
  var barrio = document.getElementById('barrio').value;
 
- if (tipoDocumento === '0') {
-    alert('Por favor, seleccione un tipo de documento.');
+ if (tipoDocumento == ''){
+   Swal.fire(
+      'El  tipo de documento está vacio, verifique',
+      '',
+      'error'
+    )
     return;
- }
+}
+else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
 
- if (documento === '') {
-    alert('Por favor, ingrese el número de documento.');
+  }
+  if (documento == ''){
+   Swal.fire(
+      'El documento está vacio, verifique',
+      '',
+      'error'
+    )
     return;
- }
-
- if (nombres === '') {
-    alert('Por favor, ingrese el nombre completo.');
+}
+if (documento.length < 10){
+  Swal.fire(
+    'El documento esta incomplento, verifique',
+    '',
+    'error'
+  )
+  return;
+}
+else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
+  if (nombres == ''){
+    Swal.fire(
+      'El nombre completo está vacio, verifique',
+      '',
+      'error'
+    )
     return;
- }
-
- if (edad === '') {
-    alert('Por favor, ingrese la edad.');
+}else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
+  
+  if (edad== ''){
+    Swal.fire(
+      'El edad está vacio, verifique',
+      '',
+      'error'
+    )
+}else if (edad < 18){
+  Swal.fire(
+    'Eres menor de edad, verifique',
+    '',
+    'error'
+  )
+}else if (edad.length == 1 || edad.length == 3 ){
+  Swal.fire(
+    'La edad no concuerda, verifique',
+    '',
+    'error'
+  )
+  return;
+}
+else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
+  if (parentesco == ''){
+    Swal.fire(
+      'El parentesco  está vacio, verifique',
+      '',
+      'error'
+    )
     return;
- }
-
- if (parentesco === '') {
-    alert('Por favor, ingrese el parentesco.');
+}else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
+  if (estado == ''){
+    Swal.fire(
+      'El estado está vacio, verifique',
+      '',
+      'error'
+      
+    )
     return;
- }
-
- if (estado === '') {
-    alert('Por favor, seleccione un estado.');
+}else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }if (telefono == ''){
+    Swal.fire(
+      'El telefono está vacio, verifique',
+      '',
+      'error'
+    )
     return;
- }
+// }else if (telefono.length <= 10){
+//     Swal.fire(
+//       'El telefono son maximo 10, verifique',
+//       '',
+//       'error'
+//     )
+//     return;
+    }else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
 
- if (telefono === '') {
-    alert('Por favor, ingrese el número de teléfono.');
-    return;
- }
+  
+   if (correo == ''){
+    Swal.fire(
+      'El correo está vacio, verifique',
+      '',
+      'error'
+    )
+    return; 
+}else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
+  if (direccion == ''){
+    Swal.fire(
+      'El direccion está vacio, verifique',
+      '',
+      'error'
+    )
+    return; 
+}else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
+  if (barrio == ''){
+    Swal.fire(
+      'El barrio está vacio, verifique',
+      '',
+      'error'
+    )
+    return; 
+}else{
+      Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Datos enviados correctos',
+          showConfirmButton: false,
+          timer: 2000
+      })
+  }
 
- if (correo === '') {
-    alert('Por favor, ingrese el correo electrónico.');
-    return;
- }
+}
+//Capturar el objeto al cual se le dará click
+const boton = document.querySelector('#btnEnviar');
 
- if (direccion === '') {
-      alert('Por favor, ingrese la dirección.');
-      return;
-   }
-});
+//Escuchar eventos del botón
+boton.addEventListener('click',validarFormulario)
