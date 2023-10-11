@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: calibri;
 }
 .container{
     width: 320px;
@@ -45,7 +45,8 @@ button[type="submit"]{
     background: rgb(247, 22, 6);
     color: black;
     font-size: 18px;
-    border-radius: 20%;
+    padding: 8px 8px;
+    
 }
 button[type="button"]{
     border: none;
@@ -54,5 +55,6 @@ button[type="button"]{
     background: rgb(247, 22, 6);
     color: black;
     font-size: 18px;
-    border-radius: 20%;
+    padding: 8px 8px;
+   
 }
