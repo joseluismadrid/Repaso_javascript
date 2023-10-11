@@ -34,6 +34,4 @@ const proceso1 = () => {
  })
 
 
- // dadas 4 listas de documentos implementar una funcion async
- // por cada lista para buscar un documento si el documento
- // esta devolver en contrado
+ 
