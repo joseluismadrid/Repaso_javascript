@@ -5,7 +5,7 @@ const acudientes=[{
     "Nombre": "jose luis madrid Londoño",
     "Edad":30,
     "parentesco":"Pápa",
-    "Estado":"Activo",
+    "Estado":false,
     "Telefono":3112716697,
     "Dirreccion": "Calle 34 AA SUR # 100 - 200",
     "Barrio":"Altos de misael"
@@ -19,7 +19,7 @@ const acudientes=[{
     "Nombre": "Luis Antonio Correa Zapata",
     "Edad":40,
     "parentesco":"Abuelo",
-    "Estado":"Activo",
+    "Estado":true,
     "Telefono":3002139078,
     "Dirreccion": "Calle 12 AA SUR # 10 - 20",
     "Barrio":"Mirador de tuzan"
@@ -32,12 +32,13 @@ const acudientes=[{
     "Nombre": "Angel jose perez",
     "Edad":20,
     "parentesco":"Tio",
-    "Estado":"Activo",
+    "Estado":false,
     "Telefono":2304060,
     "Dirreccion": "Calle 12 AA  # 10 - 20",
     "Barrio":"Buenos Aires"
 }
 ]
+
  
 for (const acudiente of acudientes) {
     console.log("ID:", acudiente.id);
@@ -46,7 +47,7 @@ for (const acudiente of acudientes) {
     console.log("Nombre:", acudiente.Nombre);
     console.log("Edad:", acudiente.Edad);
     console.log("Parentesco:", acudiente.parentesco);
-    console.log("Estado:", acudiente.Estado);
+    console.log("Estado:", acudiente.Estado?"Activo" : "Inactivo");
     console.log("N° Telefono:", acudiente.Telefono);
     console.log("Dirección:", acudiente.Dirreccion);
     console.log("Barrio:", acudiente.Barrio);
